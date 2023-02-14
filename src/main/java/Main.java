@@ -6,7 +6,7 @@ import jakarta.persistence.Persistence;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hcfhfh");
+
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
@@ -15,9 +15,9 @@ public class Main {
         try {
             transaction.begin();
             PersonalInformation preson =  new PersonalInformation();
-            preson.setFirstName("avraam");
-            preson.setLastName("tarken");
-            preson.setPhone("05363567868");
+            preson.setFirstName("avgum");
+            preson.setLastName("tarkgn");
+            preson.setPhone("0536743568");
 
             entityManager.persist(preson);
 
